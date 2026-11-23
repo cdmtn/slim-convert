@@ -1,0 +1,37 @@
+{
+	"name": "@slim-lang/convert",
+	"version": "0.1.0",
+	"description": "Converts JavaScript and TypeScript source code to Slim",
+	"type": "module",
+	"main": "src/index.js",
+	"engines": {
+		"node": ">=22.12.0"
+	},
+	"scripts": {
+		"test": "node --test test/*.test.mjs"
+	},
+	"bin": {
+		"slim-convert": "./src/cli.js"
+	},
+	"files": [
+		"src",
+		"README.md"
+	],
+	"keywords": ["slim", "typescript", "javascript", "converter", "migration"],
+	"license": "ISC",
+	"dependencies": {
+		"@babel/parser": "7.29.7"
+	},
+	"devDependencies": {
+		"@slim-lang/core": "file:../slim-lang",
+		"typescript": "^5.9.3"
+	},
+	"peerDependencies": {
+		"@slim-lang/core": ">=1.2.16"
+	},
+	"peerDependenciesMeta": {
+		"@slim-lang/core": {
+			"optional": true
+		}
+	}
+}
